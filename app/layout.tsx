@@ -1,8 +1,15 @@
-portal-egressos-unigranrio
-│
-├── app
-│   ├── layout.tsx
-│   └── page.tsx
-│
-├── package.json
-└── README.md
+export const metadata = {
+  title: "Portal de Egressos",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="pt-BR">
+      <body>{children}</body>
+    </html>
+  );
+}
